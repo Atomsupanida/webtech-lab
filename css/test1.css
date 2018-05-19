@@ -1,0 +1,173 @@
+html, body { /*design default website*/
+  padding:0;
+  margin:0;
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+  height: 100%;
+  overflow-x: visible;
+  
+}
+h1 { /*text h1 style*/
+    font-size: 4em;
+    color: rgb(182, 80, 80);
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    
+  }
+
+.button {  /*button desing*/
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  height: 2.5rem;
+  padding-top:1rem;
+  width: 15rem;
+  color:rgb(182, 80, 80);
+  border:solid rgb(182, 80, 80);
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-50%);
+  }
+  .button:hover {  /*button style when pointer*/
+    background-color: rgba(231, 206, 206, 0.664);
+    border-color: rgb(233, 137, 137);
+  }
+  
+.button1 { /*button desing*/
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    height: 2.5rem;
+    padding-top: 1rem;
+    width: 18rem;
+    text-align: center;
+    color: rgb(250, 121, 121);
+    border:solid  rgb(250, 121, 121);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: translateX(-50%);
+  }
+  .button1:hover {  /*button style when pointer*/
+    background-color: rgba(255, 192, 203, 0.466);
+    border-color: rgb(233, 137, 137);
+  }
+  
+.button2 { /*button desing*/
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    height: 2.5rem;
+    padding-top: 1rem;
+    width: 18rem;
+    text-align: center;
+    color:rgb(250, 121, 121);
+    border:solid  rgb(250, 121, 121);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: translateX(-50%);
+  }
+  .button2:hover { /*button style when pointer*/
+    background-color: rgba(255, 192, 203, 0.466);
+    border-color: rgb(233, 137, 137);
+  }
+   
+  .button3 { /*button desing*/
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    height: 2.5rem;
+    padding-top: 1rem;
+    width: 18rem;
+    text-align: center;
+    color: rgb(250, 121, 121);
+    border:solid  rgb(250, 121, 121);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: translateX(-50%);
+  }
+
+
+.button3:hover {  /*button style when pointer*/
+  background-color: rgba(255, 192, 203, 0.466);
+  border-color: rgb(233, 137, 137);
+}
+
+
+.content{ /*content desing*/
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.split {  /*split desing */
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {  /*split left desing  (left screen)*/
+  left:0; 
+  background-color: rgb(253, 192, 199);
+  background-size: cover;
+
+}
+.split.right { /*split  right desing (right screen)*/
+  right:0;
+background-image:url('../image/back.jpg');
+  background-size: cover;
+}
+
+/*Responsive Design*/
+@media screen and (max-width: 699px) { /*device resolation width less than 699px */
+    h1 {
+        font-size: 2.5em;
+      }
+    
+      .button {
+        width: 15em;
+        top: 50%;
+      }
+    }
+@media screen and (min-width: 700px) and (max-width: 1149px){  /*device resolation width 700-1149px (smart phone)*/
+    h1 {
+        font-size: 2.5em;
+      }
+    
+      .button {
+        width: 15em;
+        top: 40%;
+      }
+      .button1 {
+        width: 15em;
+        top: 30%;
+      }
+      .button2 {
+        width: 15em;
+        top:40%;
+      }
+      .button3 {
+        width: 15em;
+        top: 50%;
+      }
+    }

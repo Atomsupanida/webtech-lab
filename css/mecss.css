@@ -1,0 +1,132 @@
+nav {  /*define menu style*/
+    display: flex;
+ 
+}
+nav li {
+    float: left;
+    list-style: none;
+}
+.headMenu a:link, .headMenu a:visited{
+    display: block;      
+    padding: 0.2em 0.5em;
+    text-align: center;
+    width: 5em;
+}
+.headMenu a:hover, .headMenu a:active { /*style when pointer*/
+    background-color: rgb(162, 5, 0);
+}
+.Menu, .contactLogo{
+    width: 64px;
+    height: 64px;
+}
+img{ /*set image width*/
+    max-width: 100%;
+}
+/*design default website*/
+body {
+     font-size: 2.25em;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 2em;
+     margin: 15px auto;
+    padding: 0.5em 0.5em;
+    background-image: url('../image/412.jpg');
+    overflow-x: visible;
+}
+p {
+    
+    color : black;
+    padding-top: 0.5em;
+    padding-bottom:0.5em;
+    text-align: center;
+}
+main {
+    display: grid;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    list-style-image: url('../image/list.png');
+}
+section { /*define section style*/
+    
+    border: solid  #f8c5c5;
+    padding: 0.5em 1em;
+    box-shadow: 5px 5px 5px #facec8;
+    background-color: #d3a6b346;
+    text-align: center;
+  
+}
+
+.sectionHeader {
+    color:#d49f69;
+    text-align: center;
+}
+
+footer { /*define footer style*/
+    display: grid;
+    margin-top: 3em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    background:  rgb(254, 220, 211);
+    color: #d49f69;
+    text-align: center;
+}
+/*Responsive Design*/
+@media screen and (max-width: 699px) { /*device resolation width less than 699px */
+    nav {
+        flex-wrap: wrap;
+    }
+    nav li {
+        margin-left: 0em;
+        margin-right: 0em;
+        padding: 0em;
+        
+    }
+    main {
+      
+        grid-template-areas: 
+        "section1"
+        "section2"
+        "section3"
+        "section4";
+        grid-gap: 1.2em;
+    }
+    header {
+        margin-bottom: 0.6em;
+    }  
+   
+}
+@media screen and (min-width: 700px) and (max-width: 1149px){ /*device resolation width 700-1149px (smart phone)*/
+    nav {
+        flex-wrap: wrap;
+    }
+    main {
+        
+        grid-template-areas:
+        "section1"
+        "section2"
+        "section3"
+        "section4";
+        grid-gap: 1.5em;
+    }
+    header {
+        margin-bottom: 0.8em;
+        
+    }
+    
+}
+@media screen and (min-width: 1150px){ /*device resolation width more than 1150px (pc)*/
+    nav {
+        flex-wrap: wrap;
+    }
+    main {
+       
+        grid-template-areas:
+        "section1 section2"
+        "section3 section4";
+        grid-gap: 1.5em;
+    }
+    header {
+        margin-bottom: 1em;
+    
+      }
+}

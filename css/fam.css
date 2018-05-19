@@ -1,0 +1,115 @@
+nav { /*define menu style*/
+    display: flex;
+    
+}
+nav li {
+    float: left;
+    list-style: none;
+}
+.headMenu a:link, .headMenu a:visited{
+    display: block;
+    padding: 0.2em 0.5em;
+    text-align: center;
+    width: 5em;
+}
+.headMenu a:hover, .headMenu a:active {  /*style when pointer*/
+    background-color: rgb(162, 5, 0);
+}
+.Menu, .contactLogo{
+    width: 64px;
+    height: 64px;
+}
+/*design default website*/
+body {
+    font-size: 2.25em;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 2em;
+     margin: 15px auto;
+    padding: 0.5em 0.5em;
+    background-image: url('../image/412.jpg');
+    overflow-x: visible;
+}
+p {
+    
+    color : black;
+    padding-top: 0.5em;
+    padding-bottom:0.5em;
+    text-align: center;
+}
+.content {
+    display: flex;
+justify-content: center;
+   
+   }
+.center{
+ display: flex;
+justify-content: center;
+   
+  }
+.button1 , .button2 { /*button desing*/
+    width: 5em;
+    color: rgb(255, 255, 255);  
+    border-radius: 10px;
+    border: solid rgb(235, 69, 77, 0.685);
+    text-align: center;
+    background-color: rgb(235, 69, 77);
+}
+
+
+footer { /*define footer style*/
+    display: grid;
+    margin-top: 3em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    background:  rgb(254, 220, 211);
+    color: #d49f69;
+    text-align: center;
+}
+/*Responsive Design*/
+@media screen and (max-width: 699px) { /*device resolation width less than 699px */
+    nav {
+        flex-wrap: wrap;
+    }
+    nav li {
+        margin-left: 0em;
+        margin-right: 0em;
+        padding: 0em;
+        
+    }
+    .button1 , .button2 {
+        width: 6em;
+    }
+    
+    header {
+        margin-bottom: 0.6em;
+    }  
+   
+}
+@media screen and (min-width: 700px) and (max-width: 1149px){  /*device resolation width 700-1149px (smart phone)*/
+    nav {
+        flex-wrap: wrap;
+    }
+    .button1 , .button2 {
+        width: 6em;
+    }
+    
+    header {
+        margin-bottom: 0.8em;
+        
+    }
+    
+}
+@media screen and (min-width: 1150px){ /*device resolation width more than 1150px (pc)*/
+    nav {
+        flex-wrap: wrap;
+    }
+    .button1 , .button2 {
+        width: 6em;
+    }
+       
+    header {
+        margin-bottom: 1em;
+    
+      }
+}
